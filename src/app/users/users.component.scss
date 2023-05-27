@@ -1,0 +1,37 @@
+.container { 
+    padding: 2px 16px; 
+    height: 10em; 
+    width: 100%; 
+    box-sizing: border-box; 
+    display: inline-flex;
+}
+
+.card-title {
+    color: red;
+    text-decoration-line: underline;  
+}
+
+.card-body{
+    text-align: center;
+    margin: 10%;
+}
+
+.card img { 
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.card {
+    border: 1px solid black; 
+    margin: 1em; 
+    width: 20em;
+    height: 20em;
+    border-radius: 15%;
+}
+
+.table-container {
+    margin-block: 10em;
+}

@@ -1,0 +1,25 @@
+
+<h3>AJAX Calls to JSON Server using HttpClient in Angular</h3>
+<hr/>
+
+<input type="button" value="Get Users" (click)="getUsers()"  />
+
+<div class="col-md-10 ml-sm-auto col-lg-10 pt-3 px-4 container" (ngModel)="users" *ngIf="show">
+    <div *ngFor="let user of users" class="card">
+        <div class="card-body">
+            <img src="{{user.avatar}}" alt="User Avatar Image"> 
+            <div class="card-title">
+                <h4>
+                    {{ user.first_name }} {{ user.last_name }}
+                </h4>
+            </div>
+            <div class="card-text"> 
+                <p> User ID: {{ user.id }}  </p>
+                <p> User e-mail: {{ user.email }}  </p>
+            </div>
+        </div>
+         
+    </div>
+</div>
+
+<router-outlet></router-outlet>
